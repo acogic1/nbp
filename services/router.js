@@ -29,21 +29,39 @@ router.route('/postlinks/:id?')
   .delete(postlinks.delete);
   
 router.route('/posts/:id?')
-  .get(posts.get);
+  .get(posts.get)
+  .post(posts.post)
+  .put(posts.put)
+  .delete(posts.delete);
   
 router.route('/votes/:id?')
-  .get(votes.get);
+  .get(votes.get)
+  .post(votes.post)
+  .put(votes.put)
+  .delete(votes.delete);
   
 router.route('/linktypes/:id?')
-  .get(linktypes.get);
+  .get(linktypes.get)
+  .post(linktypes.post)
+  .put(linktypes.put)
+  .delete(linktypes.delete);
 
 router.route('/posttypes/:id?')
-  .get(posttypes.get);
+  .get(posttypes.get)
+  .post(posttypes.post)
+  .put(posttypes.put)
+  .delete(posttypes.delete);
   
 router.route('/votetypes/:id?')
-  .get(votetypes.get);
+  .get(votetypes.get)
+  .post(votetypes.post)
+  .put(votetypes.put)
+  .delete(votetypes.delete);
   
 router.route('/badges/:id?')
-  .get(badges.get);
+  .get(badges.get)
+  .post(badges.post)
+  .put(badges.put)
+  .delete(badges.delete);
 
 module.exports = router;
